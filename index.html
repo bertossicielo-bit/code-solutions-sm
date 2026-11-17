@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Solutions SM | Software y Web a Medida</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 1. BARRA DE NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">&lt;/&gt;</span>
+        Code Solutions <strong>SM</strong>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" style="color: var(--primary);">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="#servicios">Servicios</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="#precios">Precios</a>
+        <a href="#contacto" class="btn-nav">Pedir Presupuesto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 2. PORTADA PRINCIPAL -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="location-pill">📍 San Miguel · Muñiz · Bella Vista · José C. Paz · Moreno</span>
+        <h1>Transformamos ideas en soluciones digitales a medida.</h1>
+        <p>
+          Ayudamos a PyMES, comercios y profesionales a dejar atrás las planillas manuales y modernizar su negocio con software personalizado y trato directo con la desarrolladora.
+        </p>
+        <div class="hero-actions">
+          <a href="#contacto" class="btn btn-primary">Consultar sin cargo</a>
+          <a href="portafolio.html" class="btn btn-secondary">Ver demos y portafolio</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="window-top">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <small>CodeSolutionsSM.js</small>
+        </div>
+        <div class="window-body">
+          <div class="stat-item">
+            <span>Control de Stock y Ventas</span>
+            <strong>100% Automatizado</strong>
+          </div>
+          <div class="stat-item">
+            <span>Garantía Técnica y Soporte</span>
+            <strong>Ley N° 24.240</strong>
+          </div>
+          <div class="stat-item">
+            <span>Atención Personalizada</span>
+            <strong>Sin intermediarios</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SECCIÓN DE SERVICIOS -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Catálogo de Soluciones</span>
+        <h2>Herramientas pensadas para tu negocio real</h2>
+        <p>Desarrollos a medida para comercios, estudios y PyMES de la zona.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🌐</div>
+          <h3>Páginas Web</h3>
+          <p>Sitios modernos, rápidos y adaptables a celulares para destacar en Google.</p>
+          <ul>
+            <li>Diseño 100% responsive</li>
+            <li>Botón directo a WhatsApp</li>
+            <li>Posicionamiento local en Google</li>
+          </ul>
+        </div>
+
+        <div class="service-card featured">
+          <span class="popular-tag">Más elegido</span>
+          <div class="service-icon">📊</div>
+          <h3>Sistemas de Gestión</h3>
+          <p>Controlá tu negocio desde un panel simple sin depender de cuadernos o Excel.</p>
+          <ul>
+            <li>Control de stock y alertas</li>
+            <li>Registro de ventas y caja</li>
+            <li>Gestión de clientes y turnos</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🛒</div>
+          <h3>Tiendas Virtuales</h3>
+          <p>Catálogo autoadministrable para vender tus productos online las 24 horas.</p>
+          <ul>
+            <li>Carrito de compras integrado</li>
+            <li>Medios de pago digitales</li>
+            <li>Panel simple de pedidos</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Soporte y Garantía</h3>
+          <p>Acompañamiento continuo tras la entrega para que nunca te quedes solo.</p>
+          <ul>
+            <li>Capacitación y videos guía</li>
+            <li>Copias de seguridad periódicas</li>
+            <li>Garantía legal de funcionamiento</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PRECIOS DE REFERENCIA -->
+  <section id="precios" class="section bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Inversión Transparente</span>
+        <h2>Valores de Referencia</h2>
+        <p>Cada proyecto se cotiza a medida según su complejidad, con opciones de pago en etapas.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card">
+          <h3>Web Institucional / Landing</h3>
+          <div class="price">Desde $450.000</div>
+          <p>Ideal para profesionales y comercios que necesitan presencia digital profesional.</p>
+          <ul>
+            <li>Diseño adaptable a celulares</li>
+            <li>Integración con WhatsApp y Maps</li>
+            <li>Formulario de contacto</li>
+            <li>30 días de soporte bonificado</li>
+          </ul>
+          <a href="#contacto" class="btn btn-secondary full-width" onclick="selectService('Página Web Institucional')">Consultar</a>
+        </div>
+
+        <div class="price-card featured">
+          <span class="popular-tag">Solución Integral</span>
+          <h3>Sistema de Gestión / Turnos</h3>
+          <div class="price">$900.000 - $1.500.000</div>
+          <p>Software 100% personalizado para administrar stock, ventas, clientes o agenda.</p>
+          <ul>
+            <li>Módulos a medida de tu negocio</li>
+            <li>Reportes y control de caja</li>
+            <li>Capacitación y manuales en video</li>
+            <li>Garantía técnica + 60 días de soporte</li>
+          </ul>
+          <a href="#contacto" class="btn btn-primary full-width" onclick="selectService('Sistema de Gestión a Medida')">Solicitar Presupuesto</a>
+        </div>
+
+        <div class="price-card">
+          <h3>Tienda Virtual (E-commerce)</h3>
+          <div class="price">Desde $1.100.000</div>
+          <p>Plataforma completa para vender tus productos online sin comisiones por venta propia.</p>
+          <ul>
+            <li>Catálogo autoadministrable</li>
+            <li>Carrito y medios de pago</li>
+            <li>Panel de gestión de pedidos</li>
+            <li>Integración con Instagram/WhatsApp</li>
+          </ul>
+          <a href="#contacto" class="btn btn-secondary full-width" onclick="selectService('Tienda Virtual E-commerce')">Consultar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. CONTACTO -->
+  <section id="contacto" class="section bg-dark">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="section-tag light">Contacto Directo</span>
+        <h2>Contanos qué necesita tu negocio</h2>
+        <p>Respondemos en el día para coordinar una charla inicial sin compromiso (presencial en San Miguel o por videollamada).</p>
+        <div class="contact-details">
+          <p>📍 <strong>Zona de cobertura:</strong> San Miguel, Muñiz, Bella Vista, José C. Paz, Malvinas Argentinas, Moreno.</p>
+          <p>📧 <strong>Email:</strong> contacto@codesolutionssm.com.ar</p>
+        </div>
+      </div>
+
+      <form class="contact-form" id="quoteForm">
+        <h3>Pedí tu presupuesto rápido</h3>
+        <div class="form-group">
+          <label for="nombre">Tu nombre o empresa</label>
+          <input type="text" id="nombre" placeholder="Ej.: Juan Pérez - Ferretería San Miguel" required>
+        </div>
+        <div class="form-group">
+          <label for="servicio">¿Qué solución estás buscando?</label>
+          <select id="servicio">
+            <option value="Sistema de Gestión a Medida">Sistema de Gestión (Stock / Ventas / Turnos)</option>
+            <option value="Página Web Institucional">Página Web Institucional / Landing</option>
+            <option value="Tienda Virtual E-commerce">Tienda Virtual (E-commerce)</option>
+            <option value="Automatización o Soporte">Automatización de tareas / Soporte</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="mensaje">Contanos brevemente tu necesidad</label>
+          <textarea id="mensaje" rows="3" placeholder="Ej.: Necesito controlar el stock y las ventas de mi local..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary full-width">Enviar Consulta por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>Code Solutions SM</strong> — Cielo Antonella Bertossi · San Miguel, Buenos Aires.</p>
+      <p class="footer-legal">Servicios prestados bajo normativa vigente y garantía legal (Ley N° 24.240).</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio y Demos | Code Solutions SM</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- BARRA DE NAVEGACIÓN -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html" class="logo">
+        <span class="logo-badge">&lt;/&gt;</span>
+        Code Solutions <strong>SM</strong>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Inicio</a>
+        <a href="sobre-mi.html">Sobre mí</a>
+        <a href="index.html#servicios">Servicios</a>
+        <a href="portafolio.html" style="color: var(--primary);">Portafolio</a>
+        <a href="index.html#precios">Precios</a>
+        <a href="index.html#contacto" class="btn-nav">Pedir Presupuesto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO EXCLUSIVO DE PORTAFOLIO -->
+  <section class="section bg-alt" style="min-height: 80vh;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nuestro Trabajo</span>
+        <h2>Portafolio de Proyectos y Demos</h2>
+        <p>Explorá casos reales de comercios y profesionales que digitalizaron su gestión con Code Solutions SM. Probá las demos interactivas directamente desde acá.</p>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <span class="category-badge">Sistema de Gestión</span>
+          <h3>Control de Stock para Ferretería</h3>
+          <p><strong>Problema:</strong> Más de 3.000 artículos anotados a mano y demoras al actualizar precios.</p>
+          <p><strong>Solución:</strong> Sistema web con búsqueda rápida y alerta automática de stock bajo.</p>
+          <button class="btn-demo" onclick="openDemo('stock')">▶ Probar Demo Interactiva</button>
+        </div>
+
+        <div class="portfolio-card">
+          <span class="category-badge">Turnero Online</span>
+          <h3>Agenda para Consultorio Médico</h3>
+          <p><strong>Problema:</strong> Sobreturnos en la agenda de papel y pacientes que olvidaban su cita.</p>
+          <p><strong>Solución:</strong> Turnero web con reserva por especialidad y aviso por WhatsApp.</p>
+          <button class="btn-demo" onclick="openDemo('turnos')">▶ Probar Demo Interactiva</button>
+        </div>
+
+        <div class="portfolio-card">
+          <span class="category-badge">Tienda Virtual</span>
+          <h3>Catálogo Mayorista de Indumentaria</h3>
+          <p><strong>Problema:</strong> Envíos manuales de fotos por WhatsApp y errores al anotar talles.</p>
+          <p><strong>Solución:</strong> Tienda online con carrito por curva de talles y panel de pedidos.</p>
+          <button class="btn-demo" onclick="openDemo('ecommerce')">▶ Ver Vista Previa</button>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 48px;">
+        <a href="index.html" class="btn btn-secondary">← Volver a la página principal</a>
+        <a href="index.html#contacto" class="btn btn-primary" style="margin-left: 10px;">Quiero un sistema así</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>Code Solutions SM</strong> — Cielo Antonella Bertossi · San Miguel, Buenos Aires.</p>
+      <p class="footer-legal">Servicios prestados bajo normativa vigente y garantía legal (Ley N° 24.240).</p>
+    </div>
+  </footer>
+
+  <!-- VENTANA EMERGENTE (MODAL) PARA LAS DEMOS -->
+  <div class="modal-backdrop" id="demoModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3 id="modalTitle">Demo Interactiva</h3>
+        <button class="modal-close" onclick="closeDemo()">✕</button>
+      </div>
+      <div class="modal-body" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
